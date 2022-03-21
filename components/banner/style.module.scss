@@ -1,0 +1,24 @@
+
+.wrapper {
+    margin: 5em;
+    position: relative;
+    z-index: inherit;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.text-size{
+    font-size: calc(1.375rem + 7.5vw)
+}
+
+.first-line {
+    @extend .text-size;
+    text-align: start;
+    margin-left: 1.25em;
+}
+
+.second-line {
+    @extend .text-size;
+    
+}
