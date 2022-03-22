@@ -2,3 +2,10 @@
     z-index: inherit;
     position: relative;
 }
+
+.content-wrapper{
+    position: absolute;
+    top: 100vh;
+    z-index: inherit;
+    width: 100%;
+}

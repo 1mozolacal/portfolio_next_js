@@ -6,7 +6,7 @@ import style from './style.module.scss'
 const TopNavbar = () => {
 
     return (
-        <Navbar className={style['nav-bar']} collapseOnSelect scrolling expand="lg" variant="dark" sticky='top'>
+        <Navbar className={style['nav-bar']} collapseOnSelect scrolling="true" expand="lg" variant="dark" sticky='top'>
             <Container>
                 <Navbar.Brand href="#home">Calvin Mozola</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
