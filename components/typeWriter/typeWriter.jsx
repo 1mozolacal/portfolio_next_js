@@ -11,7 +11,7 @@ const TypeWriter = () => {
     const typeDelay = 50
     const carriageReturnDelay = 1000
 
-    const lines = ['Hello', 'Welcome to my site!','As you can see my name is Calvin,','and I am a Computer Science Student at Ryerson.','Feel free to have a look around.']
+    const lines = ['Hello, and welcome to my site!','As you can see my name is Calvin,','and I am a Computer Science Student at Ryerson.','Feel free to have a look around.']
 
     const [firstLine, setFirstLine] = useState('⠀')//Unicode Character “⠀” (U+2800)
     const [secondLine, setSecondLine] = useState(startChar + typeChar)
