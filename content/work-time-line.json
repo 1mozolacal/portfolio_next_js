@@ -1,59 +1,79 @@
 {
-    "metadata":"",
-    "data":[
+    "metadata": "",
+    "classes": {
+        "light": {
+            "background": "#80AECC",
+            "colour": "#000",
+            "highlight": "#002844"
+        },
+        "dark": {
+            "background": "#40779C",
+            "colour": "#000",
+            "highlight": "#A2D6F9"
+        }
+    },
+    "data": [
         {
-            "background" : "#081499",
-            "colour" : "#fff",
-            "date" : "Up and coming...",
-            "title" : "Publicis Sapient",
-            "subtitle" : "Software Developer",
-            "description" : "",
-            "icon":"/images/job.png"
+            "class": "light",
+            "background": "#75b9d9",
+            "colour": "#000",
+            "date": "Up and coming...",
+            "title": "Publicis Sapient",
+            "subtitle": "Software Developer",
+            "description": "",
+            "icon": "/images/job.png"
         },
         {
-            "background" : "#081499",
-            "colour" : "#fff",
-            "date" : "Jan 2021 - Current",
-            "title" : "Environment and Climate Change Canada",
-            "subtitle" : "Scientific Data Analyst",
-            "description" : "",
-            "icon":"/images/tree.png"
+            "class": "dark",
+            "background": "#00406C",
+            "colour": "#fff",
+            "date": "Jan 2021 - Current",
+            "title": "Environment and Climate Change Canada",
+            "subtitle": "Scientific Data Analyst",
+            "description": "",
+            "icon": "/images/tree.png"
         },
         {
-            "background" : "#081499",
-            "colour" : "#fff",
-            "date" : "May 2021 - Dec 2021",
-            "title" : "Oxford Properties",
-            "subtitle" : "Integration Developer",
-            "description" : "Create data pipelines in Azure's DataFactory using ARM code. Pipeline leverage Data Bricks, Blob storage, REST API calls, and SQL store procedures. Optimized cloud resources for a total savings of $30,000 annually. Pioneered web stack of Next.js, Agility CMS, and Netlify.",
-            "icon":"/images/building.png"
+            "class": "light",
+            "background": "#80AECC",
+            "colour": "#000",
+            "highlight": "#002844",
+            "date": "May 2021 - Dec 2021",
+            "title": "Oxford Properties",
+            "subtitle": "Integration Developer",
+            "description": "Create data pipelines in Azure's DataFactory using ARM code. Pipeline leverage Data Bricks, Blob storage, REST API calls, and SQL store procedures. Optimized cloud resources for a total savings of $30,000 annually. Pioneered web stack of Next.js, Agility CMS, and Netlify.",
+            "icon": "/images/building.png"
         },
         {
-            "background" : "#081499",
-            "colour" : "#fff",
-            "date" : "September 2020 - February 2021",
-            "title" : "Flight de vol International",
-            "subtitle" : "Scrum Master & Project Advisor",
-            "description" : "Facilitated Scrum meetings and documentation service. Monitored development team's progress, offered technical know-how on legacy systems, and assisted when problems arose.",
-            "icon":"/images/airplane.png"
+            "class": "dark",
+            "background": "#40779C",
+            "colour": "#000",
+            "highlight": "#A2D6F9",
+            "date": "September 2020 - February 2021",
+            "title": "Flight de vol International",
+            "subtitle": "Scrum Master & Project Advisor",
+            "description": "Facilitated Scrum meetings and documentation service. Monitored development team's progress, offered technical know-how on legacy systems, and assisted when problems arose.",
+            "icon": "/images/airplane.png"
         },
         {
-            "background" : "#081499",
-            "colour" : "#fff",
-            "date" : "May 2020 - August 2020",
-            "title" : "Flight de vol International",
-            "subtitle" : "Backend Developer",
-            "description" : "Gathered, parsed, cleaned, and stored data into a Postgres database for API usage. Developed APIs using Django REST framework to feed aviation data to the frontend application or perform flight analysis and decoding. Created and managed docker containers that hosted web and data services.",
-            "icon":"/images/airplane.png"
+            "class": "light",
+            "background": "#205C84",
+            "colour": "#000",
+            "date": "May 2020 - August 2020",
+            "title": "Flight de vol International",
+            "subtitle": "Backend Developer",
+            "description": "Gathered, parsed, cleaned, and stored data into a Postgres database for API usage. Developed APIs using Django REST framework to feed aviation data to the frontend application or perform flight analysis and decoding. Created and managed docker containers that hosted web and data services.",
+            "icon": "/images/airplane.png"
         },
         {
-            "background" : "#081499",
-            "colour" : "#fff",
-            "date" : "2017",
-            "title" : "Internation Medical Solution",
-            "subtitle" : "Quality Control Engineer",
-            "description" : "Tested software through rigorous procedures to ensure full functionality. Worked with the development team to remedy any identified issues. Wrote reports on tests performed and issues found.",
-            "icon":"/images/medical.png"
+            "class": "dark",
+            "background": "#081499",
+            "colour": "#fff",
+            "date": "2017",
+            "title": "Internation Medical Solution",
+            "subtitle": "Quality Control Engineer",
+            "description": "Tested software through rigorous procedures to ensure full functionality. Worked with the development team to remedy any identified issues. Wrote reports on tests performed and issues found.",
+            "icon": "/images/medical.png"
         }
     ]
 }
