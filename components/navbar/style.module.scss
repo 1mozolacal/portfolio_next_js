@@ -1,0 +1,12 @@
+
+
+.show-top{
+    z-index: inherit;
+    position: relative;
+}
+
+.nav-bar{
+    color: white;
+    z-index: 20;
+    background-color: rgba($color: #000000, $alpha: 0.2) !important;
+}
