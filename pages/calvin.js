@@ -8,6 +8,7 @@ import TypeWriter from '../components/typeWriter/typeWriter'
 import Subtitle from '../components/subtitle/subtitile'
 import AnimatedCard, { CardHolder } from '../components/card/class_card'
 import TimeLineElement from '../components/timeLine/timeLine'
+import FrostedGlass, { FrostedDescritpion } from '../components/frostedGlass/forstedGlass';
 
 import 'bootstrap/dist/css/bootstrap.min.css';//bootstrap
 import 'react-vertical-timeline-component/style.min.css';//vertical timeline
@@ -30,7 +31,7 @@ export default function Home() {
       <div style={{ zIndex: 10 }}>
         <Navbar className={styling["show-z"]}></Navbar>
         <div id='home' className={`${styling['banner-group']} ${styling['show-z']}`}>
-          <Banner/>
+          <Banner />
           <TypeWriter />
         </div>
         <Container className={styling['content-wrapper']}>
@@ -49,22 +50,19 @@ export default function Home() {
               />)
             })}
           </VerticalTimeline>
-            <div className={styling.break}/>
+          <div className={styling.break} />
           <Subtitle hrefID='projects' text='Projects' />
           <CardHolder>
             {projectData.data.map((item, index) => {
-              return (<AnimatedCard
+              return (<FrostedDescritpion
                 key={index}
-                name={item.name}
                 title={item.title}
                 description={item.description}
-                link={item.link}
-                icon={item.icon}
-                git={item.git}
-              ></AnimatedCard>)
+                picture={item.icon}
+                gitLink={item.git}
+              ></FrostedDescritpion>)
             })}
           </CardHolder>
-
         </Container>
       </div>
       <BackgroundParticles></BackgroundParticles>
