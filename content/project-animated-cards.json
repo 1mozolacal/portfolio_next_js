@@ -7,14 +7,14 @@
             "name": "Card",
             "git": "https://github.com/1mozolacal/GenFlight",
             "link": "projects/gen-flight",
-            "icon": "/images/projects/gen.png"
+            "icon": "/images/projects/gen_square.jpg"
         },
         {
             "name": "Card2",
             "title": "Data Science Challenge",
             "description": "Challenge from Salon everywhere for there data science and machine learning position",
             "link": "projects/saloneverywhere",
-            "icon": "/images/projects/salon.png",
+            "icon": "/images/projects/salon_square.jpg",
             "git": "https://github.com/1mozolacal/DataScienceChallengeSaloneverywhere"
         },
         {
@@ -23,28 +23,28 @@
             "description": "Challenge from Prepr for machine learning Internship position",
             "link": "projects/prepr",
             "git": "https://github.com/1mozolacal/Machine_Learning_Challenge",
-            "icon": "/images/projects/prepr.png"
+            "icon": "/images/projects/prepr_square.jpg"
         },
         {
             "name": "Card4",
             "title": "Shifter Module",
             "description": "Code for MKR1000 that controlled gear shifting of an FSAE formula car",
             "git": "https://github.com/1mozolacal/ShifterModule",
-            "icon": "/images/projects/RFR.jpg"
+            "icon": "/images/projects/RFR_square.jpg"
         },
         {
             "name": "Card5",
             "title": "StarCraft2 AI",
             "description": "Use python-sc2 library to interface with StarCraft; a real-time strategy game. The goal is to create a bot that will be controlled via CNN that takes the battlefield as input that is able to beat me at the game. Currently a work in progress and only able to beat the built-in hard computer.",
             "git": "https://github.com/1mozolacal/StarCraftAI.git",
-            "icon": "/images/projects/starcraft.jpg"
+            "icon": "/images/projects/starcraft_square.jpg"
         },
         {
             "name": "Card6",
             "title": "FIRST Robotics",
             "description": "My experience with FIRST Robtics, from member to mentor.",
             "link": "projects/first",
-            "icon": "/images/projects/FIRST.png"
+            "icon": "/images/projects/FIRST_square.png"
         }
     ]
 }
