@@ -12,7 +12,7 @@ import FrostedGlass, { FrostedDescritpion } from '../components/frostedGlass/for
 
 import 'bootstrap/dist/css/bootstrap.min.css';//bootstrap
 import 'react-vertical-timeline-component/style.min.css';//vertical timeline
-import styling from '../styles/AHome.module.scss'
+import styling from '../styles/Home.module.scss'
 
 import projectData from '../content/project-animated-cards.json'
 import workExperience from '../content/work-time-line.json'
