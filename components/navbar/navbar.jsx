@@ -17,11 +17,10 @@ const TopNavbar = () => {
                     </Nav>
                     <Nav>
                         <NavDropdown title="Socials" id="collasible-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Github</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Linked in</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                            <NavDropdown.Item href="https://github.com/1mozolacal">Github</NavDropdown.Item>
+                            <NavDropdown.Item href="https://www.linkedin.com/in/calvin-mozola/">Linked in</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                            <NavDropdown.Item href="mailto: calvin4992+portfolio@gmail.com">Email me!</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
