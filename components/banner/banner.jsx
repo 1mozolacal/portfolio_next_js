@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-
-
-const Banner = (props) => {
-    
-    return (<div> stuff </div>)
-}
-
-export default Banner;
-=======
 import style from './style.module.scss'
 
 const Banner = () => {
@@ -21,4 +11,3 @@ const Banner = () => {
 }
 
 export default Banner
->>>>>>> main
