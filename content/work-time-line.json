@@ -15,7 +15,7 @@
     "data": [
         {
             "class": "light",
-            "background": "#75b9d9",
+            "background": "#40779C",
             "colour": "#000",
             "date": "Up and coming...",
             "title": "Publicis Sapient",
@@ -25,8 +25,8 @@
         },
         {
             "class": "dark",
-            "background": "#00406C",
-            "colour": "#fff",
+            "background": "#40779C",
+            "colour": "#000",
             "date": "Jan 2021 - Current",
             "title": "Environment and Climate Change Canada",
             "subtitle": "Scientific Data Analyst",
@@ -35,7 +35,7 @@
         },
         {
             "class": "light",
-            "background": "#80AECC",
+            "background": "#40779C",
             "colour": "#000",
             "highlight": "#002844",
             "date": "May 2021 - Dec 2021",
@@ -48,7 +48,7 @@
             "class": "dark",
             "background": "#40779C",
             "colour": "#000",
-            "highlight": "#A2D6F9",
+            "highlight": "#002844",
             "date": "September 2020 - February 2021",
             "title": "Flight de vol International",
             "subtitle": "Scrum Master & Project Advisor",
@@ -57,7 +57,7 @@
         },
         {
             "class": "light",
-            "background": "#205C84",
+            "background": "#40779C",
             "colour": "#000",
             "date": "May 2020 - August 2020",
             "title": "Flight de vol International",
@@ -67,8 +67,8 @@
         },
         {
             "class": "dark",
-            "background": "#081499",
-            "colour": "#fff",
+            "background": "#40779C",
+            "colour": "#000",
             "date": "2017",
             "title": "Internation Medical Solution",
             "subtitle": "Quality Control Engineer",
