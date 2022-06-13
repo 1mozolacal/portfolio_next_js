@@ -8,14 +8,14 @@ import TypeWriter from '../components/typeWriter/typeWriter'
 import Subtitle from '../components/subtitle/subtitile'
 import AnimatedCard, { CardHolder } from '../components/card/class_card'
 import TimeLineElement from '../components/timeLine/timeLine'
+import FrostedGlass, { FrostedDescritpion } from '../components/frostedGlass/forstedGlass';
 
 import 'bootstrap/dist/css/bootstrap.min.css';//bootstrap
 import 'react-vertical-timeline-component/style.min.css';//vertical timeline
-import styling from '../styles/Home.module.scss'
+import styling from '../styles/AHome.module.scss'
 
 import projectData from '../content/project-animated-cards.json'
 import workExperience from '../content/work-time-line.json'
-import { classesUnpacker } from '../content/helper' 
 import { Container } from 'react-bootstrap';
 
 export default function Home() {
@@ -31,14 +31,13 @@ export default function Home() {
       <div style={{ zIndex: 10 }}>
         <Navbar className={styling["show-z"]}></Navbar>
         <div id='home' className={`${styling['banner-group']} ${styling['show-z']}`}>
-          <Banner/>
+          <Banner />
           <TypeWriter />
         </div>
         <Container className={styling['content-wrapper']}>
           <Subtitle hrefID='work' text='Work Experience' />
           <VerticalTimeline>
-            {workExperience.data.map((rawItem, index) => {
-              const item = classesUnpacker(rawItem,workExperience.classes)
+            {workExperience.data.map((item, index) => {
               return (<TimeLineElement
                 key={index}
                 background={item.background}
@@ -48,26 +47,22 @@ export default function Home() {
                 subtitle={item.subtitle}
                 description={item.description}
                 icon={item.icon}
-                highlight={item.highlight}
               />)
             })}
           </VerticalTimeline>
-            <div className={styling.break}/>
+          <div className={styling.break} />
           <Subtitle hrefID='projects' text='Projects' />
           <CardHolder>
             {projectData.data.map((item, index) => {
-              return (<AnimatedCard
+              return (<FrostedDescritpion
                 key={index}
-                name={item.name}
                 title={item.title}
                 description={item.description}
-                link={item.link}
-                icon={item.icon}
-                git={item.git}
-              ></AnimatedCard>)
+                picture={item.icon}
+                gitLink={item.git}
+              ></FrostedDescritpion>)
             })}
           </CardHolder>
-
         </Container>
       </div>
       <BackgroundParticles></BackgroundParticles>

@@ -1,0 +1,101 @@
+// Generic Froested backend
+.container {
+    width: 30rem;
+    height: 20rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+}
+
+.container:before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.9);
+    filter: blur(150px);
+    margin: -20px;
+}
+
+
+// Frosted card Description
+
+
+.card {
+    margin: 20px;
+    border-radius: 25px;
+    position: relative;
+    width: 500px;
+    max-width: 100%;
+    height: 500px;
+    max-height: 100%;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+        0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-size: cover;
+}
+
+.info {
+    width: 100%;
+    height: 500px;
+    background-color: #fff;
+    transform: translateY(100%) translateY(-88px) translateZ(0);
+    transition: transform 0.5s ease-out;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+}
+
+.info:before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    // background: inherit;
+    background: linear-gradient(40deg,
+            transparent 10%,
+            rgba(white, 0.16) 60%,
+            transparent 100%);
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.9);
+    filter: blur(150px);
+    transform: translateY(-100%) translateY(88px) translateZ(0);
+    transition: transform 0.5s ease-out;
+}
+
+.card:hover .info,
+.card:hover .info:before {
+    transform: translateY(0) translateZ(0);
+}
+
+.title {
+    margin: 0;
+    padding: 24px;
+    font-size: 40px;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.description {
+    margin: 0;
+    padding: 0 24px 24px;
+    font-size: 18px;
+    line-height: 1.5;
+}
