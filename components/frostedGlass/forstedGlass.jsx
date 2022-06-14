@@ -15,7 +15,7 @@ const FrostedDescritpion = ({ gitLink, picture, title, description }) => {
                 <h1 className={moduleStyle.title}>{title}</h1>
                 {gitLink &&
                     <a className={moduleStyle.description} href={gitLink}>
-                        <button type="button" class='btn btn-primary btn-lg'>Source code</button>
+                        <button type="button" className='btn btn-primary btn-lg'>Source code</button>
                     </a>
                 }
                 <p className={moduleStyle.description}>{description}</p>
