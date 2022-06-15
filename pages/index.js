@@ -1,5 +1,6 @@
 import { VerticalTimeline } from 'react-vertical-timeline-component';
 import Head from 'next/head'
+import { Container } from 'react-bootstrap';
 
 import BackgroundParticles from '../components/backgroundParticles/backgroundParticles'
 import Navbar from '../components/navbar/navbar'
@@ -17,9 +18,19 @@ import styling from '../styles/AHome.module.scss'
 
 import projectData from '../content/project-animated-cards.json'
 import workExperience from '../content/work-time-line.json'
-import { Container } from 'react-bootstrap';
+import skillData from '../content/skills.json'
+
 
 export default function Home() {
+
+  let skillLinedata = {}
+  let skillWheelData = {}
+  Object.keys(skillData).forEach(key => {
+    skillLinedata[key] = skillData[key]['skills']
+    skillWheelData[key] = skillData[key]['wheel']
+  })
+
+  console.log(skillWheelData)
 
   return (
     <>
@@ -31,9 +42,6 @@ export default function Home() {
 
       <div style={{ zIndex: 10 }}>
         <Navbar className={styling["show-z"]}></Navbar>
-        <div className={styling["show-z"]}>
-          <Pie></Pie>
-        </div>
         <div id='home' className={`${styling['banner-group']} ${styling['show-z']}`}>
           <Banner />
           <TypeWriter />
@@ -67,8 +75,12 @@ export default function Home() {
               ></FrostedDescritpion>)
             })}
           </CardHolder>
+          <Subtitle hrefID='skill' text='Skills' />
+          <Pie
+            lineData={skillLinedata}
+            wheelData={skillWheelData}
+          />
         </Container>
-        <Pie></Pie>
       </div>
       <BackgroundParticles></BackgroundParticles>
     </>)

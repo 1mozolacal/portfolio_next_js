@@ -14,6 +14,7 @@ const TopNavbar = () => {
                     <Nav className="me-auto">
                         <Nav.Link href="#work">Work experience</Nav.Link>
                         <Nav.Link href="#projects">Projects</Nav.Link>
+                        <Nav.Link href="#skill">Skills</Nav.Link>
                     </Nav>
                     <Nav>
                         <NavDropdown title="Socials" id="collasible-nav-dropdown">

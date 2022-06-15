@@ -1,0 +1,314 @@
+{
+    "web dev": {
+        "skills": {
+            "React": {
+                "skillLevel": 90,
+                "start": {
+                    "r": 0,
+                    "g": 90,
+                    "b": 160
+                },
+                "end": {
+                    "r": 0,
+                    "g": 140,
+                    "b": 15
+                }
+            },
+            "Django": {
+                "skillLevel": 90,
+                "start": {
+                    "r": 0,
+                    "g": 90,
+                    "b": 160
+                },
+                "end": {
+                    "r": 0,
+                    "g": 140,
+                    "b": 15
+                }
+            },
+            "Next js": {
+                "skillLevel": 90,
+                "start": {
+                    "r": 0,
+                    "g": 90,
+                    "b": 160
+                },
+                "end": {
+                    "r": 0,
+                    "g": 140,
+                    "b": 15
+                }
+            },
+            "Vue": {
+                "skillLevel": 90,
+                "start": {
+                    "r": 0,
+                    "g": 90,
+                    "b": 160
+                },
+                "end": {
+                    "r": 0,
+                    "g": 140,
+                    "b": 15
+                }
+            },
+            "Node js": {
+                "skillLevel": 90,
+                "start": {
+                    "r": 0,
+                    "g": 90,
+                    "b": 160
+                },
+                "end": {
+                    "r": 0,
+                    "g": 140,
+                    "b": 15
+                }
+            },
+            "Bootstrap": {
+                "skillLevel": 90,
+                "start": {
+                    "r": 0,
+                    "g": 90,
+                    "b": 160
+                },
+                "end": {
+                    "r": 0,
+                    "g": 140,
+                    "b": 15
+                }
+            }
+        },
+        "wheel": {
+            "title": "Web Dev",
+            "value": 100,
+            "colour": {
+                "r": 25,
+                "g": 100,
+                "b": 135
+            }
+        }
+    },
+    "languages": {
+        "skills": {
+            "python": {
+                "skillLevel": 90,
+                "start": {
+                    "r": 0,
+                    "g": 90,
+                    "b": 160
+                },
+                "end": {
+                    "r": 0,
+                    "g": 140,
+                    "b": 15
+                }
+            },
+            "javascript": {
+                "skillLevel": 80,
+                "start": {
+                    "r": 0,
+                    "g": 90,
+                    "b": 160
+                },
+                "end": {
+                    "r": 0,
+                    "g": 140,
+                    "b": 15
+                }
+            },
+            "C": {
+                "skillLevel": 60,
+                "start": {
+                    "r": 0,
+                    "g": 90,
+                    "b": 160
+                },
+                "end": {
+                    "r": 0,
+                    "g": 140,
+                    "b": 15
+                }
+            },
+            "java": {
+                "skillLevel": 70,
+                "start": {
+                    "r": 0,
+                    "g": 90,
+                    "b": 160
+                },
+                "end": {
+                    "r": 0,
+                    "g": 140,
+                    "b": 15
+                }
+            },
+            "css": {
+                "skillLevel": 65,
+                "start": {
+                    "r": 0,
+                    "g": 90,
+                    "b": 160
+                },
+                "end": {
+                    "r": 100,
+                    "g": 200,
+                    "b": 100
+                }
+            },
+            "html": {
+                "skillLevel": 65,
+                "start": {
+                    "r": 0,
+                    "g": 90,
+                    "b": 160
+                },
+                "end": {
+                    "r": 100,
+                    "g": 200,
+                    "b": 100
+                }
+            }
+        },
+        "wheel": {
+            "title": "Languages",
+            "value": 100,
+            "colour": {
+                "r": 80,
+                "g": 50,
+                "b": 170
+            }
+        }
+    },
+    "data bases": {
+        "skills": {
+            "postgres": {
+                "skillLevel": 90,
+                "start": {
+                    "r": 0,
+                    "g": 90,
+                    "b": 160
+                },
+                "end": {
+                    "r": 0,
+                    "g": 140,
+                    "b": 15
+                }
+            },
+            "My SQL": {
+                "skillLevel": 90,
+                "start": {
+                    "r": 0,
+                    "g": 90,
+                    "b": 160
+                },
+                "end": {
+                    "r": 0,
+                    "g": 140,
+                    "b": 15
+                }
+            },
+            "Mongo DB": {
+                "skillLevel": 90,
+                "start": {
+                    "r": 0,
+                    "g": 90,
+                    "b": 160
+                },
+                "end": {
+                    "r": 0,
+                    "g": 140,
+                    "b": 15
+                }
+            },
+            "Firebase": {
+                "skillLevel": 90,
+                "start": {
+                    "r": 0,
+                    "g": 90,
+                    "b": 160
+                },
+                "end": {
+                    "r": 0,
+                    "g": 140,
+                    "b": 15
+                }
+            },
+            "Oracle": {
+                "skillLevel": 90,
+                "start": {
+                    "r": 0,
+                    "g": 90,
+                    "b": 160
+                },
+                "end": {
+                    "r": 0,
+                    "g": 140,
+                    "b": 15
+                }
+            }
+        },
+        "wheel": {
+            "title": "Data Bases",
+            "value": 100,
+            "colour": {
+                "r": 105,
+                "g": 0,
+                "b": 25
+            }
+        }
+    },
+    "cloud": {
+        "skills": {
+            "data bricks": {
+                "skillLevel": 40,
+                "start": {
+                    "r": 0,
+                    "g": 90,
+                    "b": 160
+                },
+                "end": {
+                    "r": 0,
+                    "g": 140,
+                    "b": 15
+                }
+            }
+        },
+        "wheel": {
+            "title": "Cloud",
+            "value": 100,
+            "colour": {
+                "r": 25,
+                "g": 105,
+                "b": 15
+            }
+        }
+    },
+    "data science": {
+        "skills": {
+            "pandas": {
+                "skillLevel": 40,
+                "start": {
+                    "r": 0,
+                    "g": 90,
+                    "b": 160
+                },
+                "end": {
+                    "r": 30,
+                    "g": 150,
+                    "b": 215
+                }
+            }
+        },
+        "wheel": {
+            "title": "Data Science",
+            "value": 80,
+            "colour": {
+                "r": 166,
+                "g": 178,
+                "b": 245
+            }
+        }
+    }
+}

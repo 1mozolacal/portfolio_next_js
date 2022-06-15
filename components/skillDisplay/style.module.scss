@@ -1,3 +1,28 @@
+@import '../../styles/sizes.scss';
+
 .skill-title {
     color: white
+}
+
+
+.wheel-holder {
+    padding: 0;
+
+    @include lg {
+        padding: 2em;
+    }
+}
+
+
+
+.skill-bar-holder {
+    // display: table
+    height: 500px;
+    overflow: scroll;
+    margin-bottom: 50px;
+}
+
+.skill-bar-item {
+    // display: table-cell;
+    // width: 100%;
 }
