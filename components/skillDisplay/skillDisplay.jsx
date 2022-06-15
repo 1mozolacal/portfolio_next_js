@@ -8,13 +8,13 @@ import { Col, Container, Row } from 'react-bootstrap';
 
 
 const Wheel = ({ data, callbackSelected, angle = 180, lineWidth = 10, paddingAngle = 8, labelPosition = 60 }) => {
+    const [selected, setSelected] = useState(0);
+    const [hovered, setHovered] = useState(undefined);
+
     if (data === undefined) {
         console.error("Data not provided to the wheel")
         return (<div>Data not provided</div>)
     }
-    const [selected, setSelected] = useState(0);
-    const [hovered, setHovered] = useState(undefined);
-
 
     const displayData = Object.keys(data).map((key, i) => {
         const entry = data[key]
@@ -107,10 +107,9 @@ const AnimatedSkillBarGroup = ({ data, loadedFactor }) => {
                 const { skillLevel, start, end } = data[item]
                 const newColour = colourCalc(start, end, loadedFactor)
                 return (
-                    <div className={moduleStyling['skill-bar-item']}>
+                    <div key={index} className={moduleStyling['skill-bar-item']}>
                         <h3 className={moduleStyling['skill-title']}>{item}</h3>
                         <Line
-                            key={index}
                             percent={Math.max(Math.min(10, skillLevel), Math.round(skillLevel * loadedFactor))}
                             strokeWidth={1}
                             strokeColor={rgbToHex(newColour)}
