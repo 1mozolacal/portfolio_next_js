@@ -1,5 +1,6 @@
 import { VerticalTimeline } from 'react-vertical-timeline-component';
 import Head from 'next/head'
+import { Container } from 'react-bootstrap';
 
 import BackgroundParticles from '../components/backgroundParticles/backgroundParticles'
 import Navbar from '../components/navbar/navbar'
@@ -9,6 +10,7 @@ import Subtitle from '../components/subtitle/subtitile'
 import AnimatedCard, { CardHolder } from '../components/card/class_card'
 import TimeLineElement from '../components/timeLine/timeLine'
 import FrostedGlass, { FrostedDescritpion } from '../components/frostedGlass/forstedGlass';
+import Pie from '../components/skillDisplay/skillDisplay';
 
 import 'bootstrap/dist/css/bootstrap.min.css';//bootstrap
 import 'react-vertical-timeline-component/style.min.css';//vertical timeline
@@ -16,9 +18,19 @@ import styling from '../styles/Home.module.scss'
 
 import projectData from '../content/project-animated-cards.json'
 import workExperience from '../content/work-time-line.json'
-import { Container } from 'react-bootstrap';
+import skillData from '../content/skills.json'
+
 
 export default function Home() {
+
+  let skillLinedata = {}
+  let skillWheelData = {}
+  Object.keys(skillData).forEach(key => {
+    skillLinedata[key] = skillData[key]['skills']
+    skillWheelData[key] = skillData[key]['wheel']
+  })
+
+  console.log(skillWheelData)
 
   return (
     <>
@@ -63,6 +75,11 @@ export default function Home() {
               ></FrostedDescritpion>)
             })}
           </CardHolder>
+          <Subtitle hrefID='skill' text='Skills' />
+          <Pie
+            lineData={skillLinedata}
+            wheelData={skillWheelData}
+          />
         </Container>
       </div>
       <BackgroundParticles></BackgroundParticles>
