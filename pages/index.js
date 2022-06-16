@@ -1,6 +1,7 @@
 import { VerticalTimeline } from 'react-vertical-timeline-component';
 import Head from 'next/head'
 import { Container } from 'react-bootstrap';
+import { useState, useEffect } from 'react';
 
 import BackgroundParticles from '../components/backgroundParticles/backgroundParticles'
 import Navbar from '../components/navbar/navbar'
@@ -23,14 +24,27 @@ import skillData from '../content/skills.json'
 
 export default function Home() {
 
+  const [width, setWidth] = useState(undefined);
+
+  function handleWindowSizeChange() {
+    setWidth(window.innerWidth);
+  }
+  useEffect(() => {
+    setWidth(window.innerWidth)
+    window.addEventListener('resize', handleWindowSizeChange);
+    return () => {
+      window.removeEventListener('resize', handleWindowSizeChange);
+    }
+  }, []);
+
+  const isMobile = width && (width <= 768);
+
   let skillLinedata = {}
   let skillWheelData = {}
   Object.keys(skillData).forEach(key => {
     skillLinedata[key] = skillData[key]['skills']
     skillWheelData[key] = skillData[key]['wheel']
   })
-
-  console.log(skillWheelData)
 
   return (
     <>
@@ -48,7 +62,7 @@ export default function Home() {
         </div>
         <Container className={styling['content-wrapper']}>
           <Subtitle hrefID='work' text='Work Experience' />
-          <VerticalTimeline>
+          <VerticalTimeline animate={!isMobile}>
             {workExperience.data.map((item, index) => {
               return (<TimeLineElement
                 key={index}

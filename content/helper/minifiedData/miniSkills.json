@@ -1,0 +1,121 @@
+{
+    "baseColour": {
+        "r": 0,
+        "g": 90,
+        "b": 160
+    },
+    "languages": {
+        "skills": {
+            "Python": 90,
+            "Javascript": 80,
+            "SQL": 75,
+            "C": 60,
+            "Java": 70,
+            "css": 65,
+            "html": 65,
+            "TypeScript": 70,
+            "Swift": 30,
+            "Rust": 35,
+            "PHP": 40,
+            "MATlab": 45,
+            "Haskell": 40,
+            "Elixir": 30,
+            "LabVIEW": 35
+        },
+        "wheel": {
+            "title": "Languages",
+            "value": 100,
+            "colour": {
+                "r": 80,
+                "g": 50,
+                "b": 170
+            }
+        }
+    },
+    "web dev": {
+        "skills": {
+            "Next js": 70,
+            "Django": 80,
+            "React": 60,
+            "Docker": 55,
+            "Vue": 40,
+            "Node js": 45,
+            "Bootstrap": 50,
+            "Flask": 20,
+            "jQuery": 30,
+            "Angular": 20
+        },
+        "wheel": {
+            "title": "Web Dev",
+            "value": 100,
+            "colour": {
+                "r": 25,
+                "g": 100,
+                "b": 135
+            }
+        }
+    },
+    "data bases": {
+        "skills": {
+            "My SQL": 80,
+            "Postgres": 80,
+            "Mongo DB": 40,
+            "Firebase": 30,
+            "Oracle": 60
+        },
+        "wheel": {
+            "title": "Data Bases",
+            "value": 100,
+            "colour": {
+                "r": 105,
+                "g": 0,
+                "b": 25
+            }
+        }
+    },
+    "cloud": {
+        "skills": {
+            "Azure: Data Bricks": 60,
+            "Azure: Data Factory": 80,
+            "Azure: Blob Storage": 50,
+            "Azure: Virtual Machines": 55,
+            "Azure: MS SQL Server": 65,
+            "Azure: Static Hosting": 50,
+            "Azure: DevOps": 65,
+            "AWS: EC2": 50,
+            "AWS: RDS": 25,
+            "AWS: S3": 20,
+            "GCP: BigQuery": 40,
+            "GCP: Firebase": 25,
+            "GCP: Firestore": 20
+        },
+        "wheel": {
+            "title": "Cloud",
+            "value": 100,
+            "colour": {
+                "r": 166,
+                "g": 178,
+                "b": 245
+            }
+        }
+    },
+    "data science": {
+        "skills": {
+            "Pandas": 65,
+            "NumPy": 70,
+            "Probability & Statistics": 70,
+            "Beautifulsoup": 60,
+            "Seaborn": 45,
+            "Matplotlib": 50
+        },
+        "wheel": {
+            "title": "Data Science",
+            "value": 80,
+            "colour": {
+                "r": 25,
+                "g": 105,
+                "b": 15
+            }
+        }
+    }
+}

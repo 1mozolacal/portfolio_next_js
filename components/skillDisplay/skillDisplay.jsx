@@ -7,7 +7,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 
 
 
-const Wheel = ({ data, callbackSelected, angle = 180, lineWidth = 10, paddingAngle = 8, labelPosition = 60 }) => {
+const Wheel = ({ data, callbackSelected, angle = 270, lineWidth = 30, paddingAngle = 22, labelPosition = 110 }) => {
     const [selected, setSelected] = useState(0);
     const [hovered, setHovered] = useState(undefined);
 
@@ -18,7 +18,6 @@ const Wheel = ({ data, callbackSelected, angle = 180, lineWidth = 10, paddingAng
 
     const displayData = Object.keys(data).map((key, i) => {
         const entry = data[key]
-        console.log(entry)
         if (hovered === i) {
             return {
                 title: entry.title,
@@ -45,12 +44,14 @@ const Wheel = ({ data, callbackSelected, angle = 180, lineWidth = 10, paddingAng
             startAngle={angle}
             rounded
             animate
+            radius={30}
             animationDuration={1500}
             label={({ dataEntry }) => dataEntry.title}
             labelStyle={(index) => ({
                 fill: displayData[index].color,
                 fontSize: '5px',
                 fontFamily: 'sans-serif',
+                whiteSpace: 'pre-wrap',
             })}
             labelPosition={labelPosition}
             segmentsShift={(index) => (index === selected ? 4 : 0)}
@@ -61,8 +62,6 @@ const Wheel = ({ data, callbackSelected, angle = 180, lineWidth = 10, paddingAng
                 overflow: 'visible'
             }}
             onClick={(event, index) => {
-                console.log('CLICK', Object.keys(data)[index]);
-                console.log(index)
                 callbackSelected(Object.keys(data)[index]);
                 setSelected(index);
             }}
@@ -113,6 +112,7 @@ const AnimatedSkillBarGroup = ({ data, loadedFactor }) => {
                             percent={Math.max(Math.min(10, skillLevel), Math.round(skillLevel * loadedFactor))}
                             strokeWidth={1}
                             strokeColor={rgbToHex(newColour)}
+                            trailColor='#666666'
                         />
                     </div>
                 )
@@ -150,7 +150,6 @@ const testWheel = {
 }
 
 const Display = ({ lineData, wheelData, delay = 400, duration = 1000, timerInterval = 10 }) => {
-    console.log('linedata', lineData)
     const [currentSelector, setCurrentSelector] = useState(Object.keys(lineData)[0])
     const [loadedAt, setLoadedAt] = useState(Date.now())
     const [factor, setFactor] = useState(0)
@@ -167,8 +166,6 @@ const Display = ({ lineData, wheelData, delay = 400, duration = 1000, timerInter
     useEffect(() => {
         const interval = setInterval(() => {
             setFactor(Math.min(Math.max((Date.now() - loadedAt - delay) / duration, 0), 1))
-            // console.log('time', Math.min(Math.max((Date.now() - loadedAt - delay) / duration, 0), 1))
-            // console.log('loaded at', loadedAt)
         }, timerInterval);
         return () => clearInterval(interval);
 
